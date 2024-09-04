@@ -6,6 +6,7 @@ import userStore from "@/stores/usersStore"; // Import the MobX store
 import { useRouter } from "next/navigation";
 import React from "react";
 import { User } from "@/interfaces/User";
+import taskStore from "@/stores/TaskStore";
 
 const Page = observer(() => {
   const router = useRouter();
@@ -31,6 +32,7 @@ const Page = observer(() => {
           <button
             onClick={() => {
               userStore.reset();
+              taskStore.reset();
             }}
             className="mt-5 bg-blue-500 text-white px-12 py-6 text-xl rounded hover:bg-blue-600"
           >
