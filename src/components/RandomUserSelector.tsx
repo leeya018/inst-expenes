@@ -1,5 +1,5 @@
 import { User } from "@/interfaces/User";
-import { users } from "@/util";
+import { usersData } from "@/util";
 import { useState } from "react";
 
 type RandomUserSelector = {
