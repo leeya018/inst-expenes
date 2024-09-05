@@ -39,6 +39,16 @@ const Page = observer(() => {
             Reset Game
           </button>
         )}
+        {userStore.participantUsers.length === 0 && (
+          <button
+            onClick={() => {
+              router.push("/game");
+            }}
+            className="mt-5 bg-blue-500 text-white px-12 py-6 text-xl rounded hover:bg-blue-600"
+          >
+            Start without Choosing
+          </button>
+        )}
       </div>
     </div>
   );

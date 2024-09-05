@@ -21,7 +21,9 @@ const MainPage: React.FC = observer(() => {
     <div className="h-screen w-screen flex flex-col p-10">
       <BackButton />
       <div className="h-[30vh] flex justify-center items-center flex-col">
-        <RandomUserSelector selectedUser={userStore.selectedUser} />
+        {userStore.participantUsers.length > 1 && (
+          <RandomUserSelector selectedUser={userStore.selectedUser} />
+        )}
         <RandomTaskSelector selectedTask={taskStore.selectedTask} />
       </div>
       <div className="flex-1 flex justify-center items-center ">
