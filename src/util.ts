@@ -219,12 +219,6 @@ export const tasks: Task[] = [
   { id: 71, title: "מהו המקום הכי מעניין שביקרת בו?", completed: false },
   { id: 72, title: "מהו המאכל הכי מוזר שאכלת אי פעם?", completed: false },
 ];
-export const getDbUrl = () => {
-  if (process.env.NODE_ENV) {
-    return "https://console.firebase.google.com/u/0/project/apartments-invest/firestore";
-  }
-  return "https://console.firebase.google.com/u/0/project/dating-empire/firestore";
-};
 
 export const netlifyUrl = "https://app.netlify.com/sites/work-lee/deploys";
 export const githubUrl = "https://github.com/leeya018/work";
